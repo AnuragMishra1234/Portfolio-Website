@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="styles/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/GLTFLoader.js"></script>
+
+
 </head>
 <body>
   <div class="container">
@@ -48,17 +53,54 @@
   </section>
   
 
-   <!-- About Section -->
-<section id="about" class="about">
-  <h2>About Me</h2>
-  <p>
-      I am an <span class="highlight">AI/ML engineer</span>, 
-      <span class="highlight">web developer</span>, and 
-      <span class="highlight">video editor</span> with a passion for creating 
-      innovative solutions.
-  </p>
-</section>
-
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+        I am an <span class="highlight">AI/ML engineer</span>,
+        <span class="highlight">web developer</span>, and 
+        <span class="highlight">video editor</span> with a passion for creating 
+        innovative solutions.
+    </p>
+    <section id="skills" class="skills">
+      <h2>SKILLS</h2>
+    </section>
+  
+    <!-- Web Development Skills -->
+    <h3>Web Development Skills</h3>
+    <div class="listSkill">
+      <div class="item"><i class="fa-brands fa-html skill-icon"></i> HTML</div>
+      <div class="item"><i class="fa-brands fa-css-alt skill-icon"></i> CSS</div>
+      <div class="item"><i class="fa-brands fa-js skill-icon"></i> JavaScript</div>
+      <div class="item"><i class="fa-brands fa-node skill-icon"></i> Node.js</div>
+      <div class="item"><i class="fa-brands fa-react skill-icon"></i> React JS</div>
+      <div class="item"><i class="fa-solid fa-cube skill-icon"></i> Three.js</div>
+      <div class="item"><i class="fa-brands fa-nextjs skill-icon"></i> Next.js</div>
+    </div>
+  
+    <!-- AI/ML Skills -->
+    <h3>AI/ML Skills</h3>
+    <div class="listSkill">
+      <div class="item"><i class="fa-brands fa-python skill-icon"></i> TensorFlow</div>
+      <div class="item"><i class="fa-brands fa-python skill-icon"></i> PyTorch</div>
+      <div class="item"><i class="fa-solid fa-brain skill-icon"></i> Keras</div>
+      <div class="item"><i class="fa-solid fa-network-wired skill-icon"></i> CNN</div>
+      <div class="item"><i class="fa-solid fa-code-branch skill-icon"></i> RNN</div>
+      <div class="item"><i class="fa-solid fa-brain skill-icon"></i> ANN</div>
+      <div class="item"><i class="fa-solid fa-tree skill-icon"></i> Random Forest</div>
+    </div>
+  
+    <!-- Other Skills -->
+    <h3>Other Skills</h3>
+    <div class="listSkill">
+      <div class="item"><i class="fa-solid fa-video skill-icon"></i> Video Editing</div>
+      <div class="item"><i class="fa-solid fa-lightbulb skill-icon"></i> Problem Solving</div>
+      <div class="item"><i class="fa-solid fa-laptop-code skill-icon"></i> Competitive Coding</div>
+    </div>
+  </section>
+  
+  <!-- Font Awesome Link (For Icons) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
 
     <!-- Contact Section -->
 <section id="contact" class="contact">
@@ -72,8 +114,8 @@
 </section>
 
 
-  <!-- 3D Car Model -->
-  <div id="3d-car"></div>
+  <!-- 3D Earth Model -->
+<div id="3d-earth"></div>
 
   <script src="scripts/main.js"></script>
 </body>
